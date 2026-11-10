@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Birthday Janani 🎂</title>
+<meta name="theme-color" content="#14061f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+
+<!-- START / COUNTDOWN -->
+<div id="intro">
+  <div id="startBox">
+    <p class="small">A surprise for</p>
+    <h1 class="script">Janani Upeksha</h1>
+    <button id="startBtn">Open your surprise 🎁</button>
+    <p class="small hint">🔊 turn your sound on</p>
+  </div>
+  <div id="count" class="hidden"><span id="countNum">3</span></div>
+</div>
+
+<!-- CAKE -->
+<section id="hero">
+  <canvas id="cake"></canvas>
+  <div id="heroText">
+    <h2 class="script" id="heroTitle">Happy Birthday</h2>
+    <p id="heroSub">Make a wish, Janani…</p>
+  </div>
+  <div id="scrollHint" class="hidden">scroll down ↓<br><span>your wishes are waiting</span></div>
+</section>
+
+<!-- MELTING CANDLES BAR -->
+<div id="candleBar" aria-hidden="true"></div>
+
+<!-- GALLERY -->
+<main id="gallery"></main>
+
+<!-- FINALE -->
+<section id="finale">
+  <canvas id="confetti"></canvas>
+  <p class="small">the day it all began</p>
+  <div class="nums">
+    <div class="num" data-v="11"><b>11</b><i>day</i></div>
+    <div class="num" data-v="11"><b>11</b><i>month</i></div>
+    <div class="num" data-v="1997"><b>1997</b><i>year</i></div>
+    <div class="num big" data-v="29"><b>29</b><i>today</i></div>
+  </div>
+  <h2 class="script">Happy 29th Birthday, Janani!</h2>
+  <p class="final">May this year bring you every happiness you've ever wished for.<br>Love you always 💖</p>
+  <button id="replay">Replay 🎂</button>
+</section>
+
+<button id="mute" aria-label="Toggle music">🔊</button>
+<audio id="song" src="assets/song/happy-birthday-janani.mp3" preload="auto" loop></audio>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
